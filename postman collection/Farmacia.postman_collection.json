@@ -1,0 +1,692 @@
+{
+	"info": {
+		"_postman_id": "4fdcb5f7-63bf-45bb-a1e0-57defafa2768",
+		"name": "Farmacia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetCategoria",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/categoria",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostCategoria 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeCateg\": \"Medicamentos de Referência\",\r\n    \"descricaoCateg\": \"Os medicamentos de referência - também conhecidos como “de marca” por terem marca comercial bem conhecida - são aqueles que possuem eficácia e segurança cientificamente comprovadas. Geralmente são produtos inovadores, com registro na Agência Nacional de Vigilância Sanitária (Anvisa).\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/categoria",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostCategoria 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeCateg\": \"Medicamentos Genéricos\",\r\n    \"descricaoCateg\": \"O medicamento genérico é aquele que contém o(s) mesmo(s) princípio(s) ativo(s), na mesma dose e forma farmacêutica, é administrado pela mesma via e com a mesma posologia e indicação terapêutica do medicamento de referência, apresentando eficácia e segurança equivalentes à do medicamento de referência e podendo, com este, ser intercambiável.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/categoria",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostCategoria 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeCateg\": \"Medicamentos Fitoterápicos\",\r\n    \"descricaoCateg\": \"É o medicamento feito exclusivamente à base de plantas.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/categoria",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostCategoria 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeCateg\": \"Medicamentos Homeopáticos\",\r\n    \"descricaoCateg\": \"É o medicamento que segue a doutrina da cura pelo semelhante, ou seja, são substâncias capazes de causar sintomas de uma determinada doença no organismo sadio para que o sistema imunológico defenda a doença. É conhecida como dinamização (energização do medicamento). Sendo a homeopatia uma técnica mais natural, comparada à alopatia.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/categoria",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutCategoria 3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCateg\": 3,\r\n    \"nomeCateg\": \"Medicamentos Fitoterápicos\",\r\n    \"descricaoCateg\": \"O medicamento fitoterápico é um remédio produzido a partir de vegetais ou plantas medicinais com alguma ação terapêutica. Eles também são caracterizados por dispor de um conjunto de princípios ativos que são conseguidos a partir de partes de plantas, como raízes, folhas e sementes. Por esse motivo, na fórmula de um fitoterápico é comum encontrar outros ingredientes naturais, como cera de abelha e óleos vegetais. Eles podem ser apresentados em diversas formas: cápsula, creme, gel, xarope etc.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/categoria",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProduto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProduto Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produto/8",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProduto Descrição",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produto/descricao/enjoo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"descricao",
+						"enjoo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProduto PreçoMenorQue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produto/preco_menor/20",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"preco_menor",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProduto PreçoMaiorQue",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produto/preco_maior/50",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"preco_maior",
+						"50"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProduto NomeOuLab",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produto/nome/Maracugina 840mg 20 Comprimidos/oulaboratorio/Medley",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"nome",
+						"Maracugina 840mg 20 Comprimidos",
+						"oulaboratorio",
+						"Medley"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProduto NomeELab",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produto/nome/Nisulid 100mg 12 Comprimidos/elaboratorio/Ache",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"nome",
+						"Nisulid 100mg 12 Comprimidos",
+						"elaboratorio",
+						"Ache"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProduto 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeProd\": \"Nisulid 100mg 12 Comprimidos\",\r\n    \"descricaoProd\": \"Este medicamento é destinado ao tratamento de uma variedade de condições que requeiram atividade anti-inflamatória (contra a inflamação), analgésica (contra a dor) e antipirética (contra a febre).\",\r\n    \"laboratorioProd\": \"Aché\",\r\n    \"classificacaoProd\": \"Tarja Vermelha sem Retenção\",\r\n    \"precoProd\": 42.79,\r\n    \"categoria\":{\r\n        \"idCateg\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProduto 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeProd\": \"Nimesulida 100mg Neo Quimica Generico 12 Comprimidos\",\r\n    \"descricaoProd\": \"Este medicamento é destinado ao tratamento de uma variedade de condições que requeiram atividade antiinflamatória (contra a inflamação), analgésica (contra a dor) e antipirética (contra a febre).\",\r\n    \"laboratorioProd\": \"Neo Química\",\r\n    \"classificacaoProd\": \"Tarja Vermelha sem Retenção\",\r\n    \"precoProd\": 12.49,\r\n    \"categoria\":{\r\n        \"idCateg\": 2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProduto 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeProd\": \"Dramin B6 30 Comprimidos\",\r\n    \"descricaoProd\": \"Dramin B6 é indicado para prevenir e tratar os sintomas de enjoo, tontura e vômitos em geral, incluindo os vômitos e enjoos da gravidez, no pré e pós-operatórios e após tratamento com radioterapia; na prevenção e tratamento de tonturas, enjoos e vômitos causados por movimentos durante as viagens (avião, barco, ônibus, automóvel, etc.), quadro conhecido como cinetose; paraprevenção e tratamento das labirintites e vertigens em geral.\",\r\n    \"laboratorioProd\": \"Takeda\",\r\n    \"classificacaoProd\": \"Tarja Vermelha sem Retenção\",\r\n    \"precoProd\": 18.09,\r\n    \"categoria\":{\r\n        \"idCateg\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProduto 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeProd\": \"Novalgina 1g com 10 comprimidos\",\r\n    \"descricaoProd\": \"Este medicamento é indicado como analgésico (para dor) e antitérmico (para febre).\",\r\n    \"laboratorioProd\": \"Sanofi Aventis\",\r\n    \"classificacaoProd\": \"Medicamentos Isentos de Prescrição\",\r\n    \"precoProd\": 23.29,\r\n    \"categoria\":{\r\n        \"idCateg\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProduto 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeProd\": \"Dipirona Sodica 500mg Medley Generico 30 Comprimidos\",\r\n    \"descricaoProd\": \"Este medicamento é à base de dipirona, utilizado no tratamento da dor e febre. Os efeitos analgésico e antitérmico podem ser esperados em 30 a 60 minutos após a administração e geralmente persistem por aproximadamente 4 horas.\",\r\n    \"laboratorioProd\": \"Medley\",\r\n    \"classificacaoProd\": \"Medicamentos Isentos de Prescrição\",\r\n    \"precoProd\": 24.39,\r\n    \"categoria\":{\r\n        \"idCateg\": 2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProduto 6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeProd\": \"Astro 500mg 5 Comprimidos Revestidos\",\r\n    \"descricaoProd\": \"É indicado no tratamento de infecções causadas por bactérias sensíveis à azitromicina; em infecções do trato respiratório inferior (brônquios e pulmões) e superior (nariz, faringe laringe e traqueia), incluindo sinusite (infecção nos seios da face), faringite (inflamação da faringe) ou amigdalite (inflamação das amígdalas); infecções da pele e tecidos moles (músculos, tendões, gordura); em otite média (infecção do ouvido médio) aguda e nas doenças sexualmente transmissíveis não complicadas nos genitais de homens e mulheres, causadas pelas bactérias Chlamydia trachomatis e Neisseria gonorrhoeae.\",\r\n    \"laboratorioProd\": \"Eurofarma\",\r\n    \"classificacaoProd\": \"Tarja Vermelha com Retenção de Receita\",\r\n    \"precoProd\": 29.79,\r\n    \"categoria\":{\r\n        \"idCateg\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProduto 7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeProd\": \"Azitromicina Di-Hidratada 500mg Sandoz Generico com 5 comprimidos\",\r\n    \"descricaoProd\": \"É indicado no tratamento de infecções causadas por bactérias sensíveis à azitromicina; em infecções do trato respiratório inferior (brônquios e pulmões) e superior (nariz, faringe laringe e traqueia), incluindo sinusite (infecção nos seios da face), faringite (inflamação da faringe) ou amigdalite (inflamação das amígdalas); infecções da pele e tecidos moles (músculos, tendões, gordura); em otite média (infecção do ouvido médio) aguda e nas doenças sexualmente transmissíveis não complicadas nos genitais de homens e mulheres, causadas pelas bactérias Chlamydia trachomatis e Neisseria gonorrhoeae.\",\r\n    \"laboratorioProd\": \"Sandoz\",\r\n    \"classificacaoProd\": \"Tarja Vermelha com Retenção de Receita\",\r\n    \"precoProd\": 30.19,\r\n    \"categoria\":{\r\n        \"idCateg\": 2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProduto 8",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeProd\": \"Rivotril 0,5mg 30 Comprimidos-B1\",\r\n    \"descricaoProd\": \"Adulto e pediátrico Distúrbio epiléptico Rivotril é indicado para tratar crises epilépticas e espasmos infantis (síndrome de West). Adulto Rivotril também é indicado para: Transtornos de ansiedade como ansiolítico em geral. Distúrbio do pânico com ou sem medo de espaços abertos. Fobia social (medo de situações como falar em público). Transtornos do humor transtorno afetivo bipolar (fases de depressão e mania): tratamento da mania. Depressão maior: associado a antidepressivos na depressão ansiosa e início do tratamento. Síndromes psicóticas acatisia (inquietação extrema, geralmente provocada por medicamentos psiquiátricos). Síndrome das pernas inquietas (desconforto ou dor nas pernas que leva à necessidade de movimentálas, prejudicando o sono). Vertigem e distúrbios do equilíbrio: náuseas, vômitos, desmaios, quedas, zumbidos e distúrbios auditivos. Síndrome da boca ardente (sensação de queimação na parte interna da boca, sem alterações físicas).\",\r\n    \"laboratorioProd\": \"Roche\",\r\n    \"classificacaoProd\": \"Tarja Preta\",\r\n    \"precoProd\": 13.59,\r\n    \"categoria\":{\r\n        \"idCateg\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProduto 9",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeProd\": \"Clonazepam 0,5mg Medley Generico com 30 comprimidos B1\",\r\n    \"descricaoProd\": \"Este medicamento é indicado para tratamento de:Distúrbio epiléptico:O Clonazepam é indicado para tratar crises epilépticas e espasmos infantis (Síndrome de West).Transtornos de ansiedade:- Como ansiolítico em geral.- Distúrbio do pânico com ou sem medo de espaços abertos.- Fobia social (medo de situações como falar em público).Transtornos do humor:- Transtorno afetivo bipolar (fases de depressão e mania): tratamento da mania.- Depressão maior: associado a antidepressivos na depressão ansiosa e início do tratamento.Síndromes psicóticas:- Acatisia (inquietação extrema, geralmente provocada por medicamentos psiquiátricos).Síndrome das pernas inquietas (desconforto ou dor nas pernas que leva a necessidade de movimentá-las, prejudicando o sono).Vertigem e distúrbios do equilíbrio: náuseas, vômitos, desmaios, quedas, zumbidos e distúrbios auditivos.Síndrome da boca ardente (sensação de queimação na parte interna da boca, sem alterações físicas).\",\r\n    \"laboratorioProd\": \"Medley\",\r\n    \"classificacaoProd\": \"Tarja Preta\",\r\n    \"precoProd\": 6.05,\r\n    \"categoria\":{\r\n        \"idCateg\": 2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProduto 10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeProd\": \"Maracugina 840mg 20 Comprimidos\",\r\n    \"descricaoProd\": \"Maracugina PI 840mg é um medicamento fitoterápico indicado para o tratamento da insônia, má qualidade do sono, ansiedade e agitação causadas pelo estresse.\",\r\n    \"laboratorioProd\": \"Hypera\",\r\n    \"classificacaoProd\": \"Medicamentos Isentos de Prescrição\",\r\n    \"precoProd\": 33.82,\r\n    \"categoria\":{\r\n        \"idCateg\": 3\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProduto 11",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeProd\": \"Suplemento Vitamínico Mineral Goji Berry Actives VitaminLife 400mg com 60 cápsulas\",\r\n    \"descricaoProd\": \"Goji Actives Goji Berry é um suplemento natural que ajuda você a emagrecer. Sua vitamina C e vitamina E atuam aumentando a ação antioxidante. Com isso, potencializa o nosso corpo contra os radicais livres que danificam nossas células, mantendo o equilíbrio, elasticidade, firmeza da pele.\",\r\n    \"laboratorioProd\": \"AM Cunha\",\r\n    \"classificacaoProd\": \"Medicamentos Isentos de Prescrição\",\r\n    \"precoProd\": 54.59,\r\n    \"categoria\":{\r\n        \"idCateg\": 3\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProduto 12",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeProd\": \"Almeida Prado Complexo Ignatia N35 60 Comprimidos\",\r\n    \"descricaoProd\": \"Complexo Homeopático Ignatia Almeida Prado N° 35 ajuda a diminuir a ansiedade, nervosismo, mudanças de humor e dificuldades para dormir.\",\r\n    \"laboratorioProd\": \"Almeida Prado\",\r\n    \"classificacaoProd\": \"Medicamentos Isentos de Prescrição\",\r\n    \"precoProd\": 26.70,\r\n    \"categoria\":{\r\n        \"idCateg\": 4\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostProduto 13",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nomeProd\": \"Almeida Prado Pomada Homeopatica Arnica 25g\",\r\n    \"descricaoProd\": \"A pomada Arnica deve ser utilizado três vezes ao dia no local afetado, massagear em forma circular a parte lesionada.\",\r\n    \"laboratorioProd\": \"Almeida Prado\",\r\n    \"classificacaoProd\": \"Medicamentos Isentos de Prescrição\",\r\n    \"precoProd\": 34.59,\r\n    \"categoria\":{\r\n        \"idCateg\": 4\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProduto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produto/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCategoria",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/categoria/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
